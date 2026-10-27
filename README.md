@@ -179,6 +179,12 @@ Important interpretation note: In this notebook, OrderSize is based on product V
    
 The following formulas explain the key measures used in the analysis. Where the notebook uses a field already supplied by the dataset, this is distinguished from a newly calculated metric.
 
+### 8.1 Total Purchase Amount
+$$
+\text{Total Purchases}=\sum \text{TotalPurchaseDollars}
+$$
+
+Measures the total expenditure recorded for purchasing products.
 ### 8.2 Total Sales Revenue
 
 $$
