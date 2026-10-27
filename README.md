@@ -2,7 +2,7 @@
 Analyzed vendor sales and purchasing data using Python to evaluate sales performance, profitability, purchase trends, and vendor efficiency. Performed data cleaning, exploratory data analysis, statistical analysis, and visualization to identify top-performing vendors and business improvement opportunities.
 
 📌 1. Project Overview
-2. 
+
 Vendor Performance Analysis is a data analytics project focused on evaluating vendor contributions to business revenue, profitability, purchasing, and inventory efficiency.
 
 In retail and supply chain operations, selecting vendors based only on sales or purchase volume can lead to misleading decisions. A vendor may generate high sales but deliver lower profit, while another vendor may generate a high profit margin with comparatively lower sales. Similarly, excessive purchasing, slow-moving products, freight expenses, and excise taxes can affect overall business performance.
@@ -169,54 +169,71 @@ Important interpretation note: In this notebook, OrderSize is based on product V
    
 The following formulas explain the key measures used in the analysis. Where the notebook uses a field already supplied by the dataset, this is distinguished from a newly calculated metric.
 8.1 Total Purchase Amount
+$$
 \[
 \text{Total Purchases}=\sum \text{TotalPurchaseDollars}
 \]
+$$
 
 Measures the total expenditure recorded for purchasing products.
+
 8.2 Total Sales Revenue
+$$
 \[
 \text{Total Sales}=\sum \text{TotalSalesDollars}
 \]
+$$
 
 Measures the total sales revenue recorded in the dataset.
+
+$$
 8.3 Gross Profit
 \[
 \text{Total Gross Profit}=\sum \text{GrossProfit}
 \]
-
+$$
 The notebook aggregates the supplied GrossProfit field. It does not independently recompute the accounting formula used to construct that source field.
+
 8.4 Overall Profit Margin
+$$
 \[
 \text{Profit Margin (\%)}=
 \frac{\sum \text{GrossProfit}}
 {\sum \text{TotalSalesDollars}}\times100
 \]
-
+$$
 This is the overall margin calculated using aggregate gross profit divided by aggregate sales. It is not the simple average of each row's profit margin.
+
 8.5 Vendor-Level Profit Margin
+$$
 \[
 \text{Vendor Margin (\%)}=
 \frac{\text{Vendor Gross Profit}}
 {\text{Vendor Sales Revenue}}\times100
 \]
-
+$$
 This allows vendors to be compared based on the proportion of their sales revenue represented by gross profit.
+
 8.6 Positive Profit, Loss, and Net Profit
 Positive profit is calculated by summing positive GrossProfit values.
 
 Loss is calculated by summing negative GrossProfit values; it remains negative when presented as a signed amount.
+$$
 \[
 \text{Net Profit}=\text{Positive Profit}+\text{Negative Loss}
 \]
+$$
 
 8.7 Correlation
 The Pearson correlation coefficient is used to examine linear relationships between numerical variables.
+$$
 \[
 r=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}
 \]
+$$
 
 A positive coefficient indicates that two variables tend to increase together. A negative coefficient indicates an inverse relationship. Correlation alone does not establish causation.
+
 8.8 Statistical significance
 The analysis uses a significance threshold of \(0.05\).
 - \(p<0.05\): evidence of a statistically significant difference or association under the test assumptions.
@@ -240,6 +257,7 @@ Distribution and correlation analysis
 Histograms, box plots, summary statistics, skewness, kurtosis, and correlation analysis were used to understand the spread of the data, identify extreme observations, and evaluate relationships between numerical variables.
 
 📈 10. Statistical Analysis 
+
 Three hypothesis tests and a confidence interval were included in the notebook.
 Method	Purpose	Recorded result
 Independent-samples t-test	Compare gross-profit values for positive-profit and negative-profit records	\(t \approx 31.75\), \(p \approx 2.23\times10^{-211}\)
@@ -325,7 +343,7 @@ Monitor vendors over time. Maintain a dashboard that enables the business to tra
 - The initial analysis flagged non-finite profit-margin values. Further data-quality checks are recommended before relying on all margin calculations and statistical summaries.
 - The confidence interval uses a normal approximation and should be interpreted cautiously because the gross-profit distribution is skewed.
 - The statistical tests depend on their assumptions; significant p-values alone do not establish business causation.
-- 
+  
 🚀 14. Future Enhancements
   
 - Develop a predictive model to flag potentially loss-making vendors and forecast vendor profitability.
@@ -336,7 +354,7 @@ Monitor vendors over time. Maintain a dashboard that enables the business to tra
 - Automate data preparation, reporting, and dashboard refreshes to support regular monitoring.
 - Strengthen validation of non-finite values and evaluate the effect of outlier treatment on reported metrics.
 
-  🏁 15. Conclusion
+🏁 15. Conclusion
   
 The Vendor Performance Analysis project demonstrates how Python can be used to evaluate vendor contributions, product performance, profitability, costs, and inventory efficiency in a retail and supply chain setting.
 
