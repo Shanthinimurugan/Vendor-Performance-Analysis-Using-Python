@@ -55,32 +55,40 @@ Dataset file: vendor_sales_summary.csv
 
 The dataset contains vendor, product, pricing, purchasing, sales, tax, freight, profitability, and stock-turnover information. The time period covered by the dataset is not specified in the notebook.
 
-Dataset size
-Processing stage	Rows	Columns
-Original dataset	10,692	18
-After removing two unused columns	10,692	16
-After removing zero-sales-quantity records	10,514	16
-Final prepared CSV exported from the notebook	10,514	31
+
+The dataset contains vendor, product, pricing, purchasing, sales, tax, freight, profitability, and stock-turnover information. The time period covered by the dataset is not specified in the notebook.
+
+### 📊 Dataset Size
+
+| Processing Stage | Rows | Columns |
+|---|---:|---:|
+| Original Dataset | 10,692 | 18 |
+| After Removing Two Unused Columns | 10,692 | 16 |
+| After Removing Zero-Sales-Quantity Records | 10,514 | 16 |
+| Final Prepared CSV Exported from the Notebook | 10,514 | 31 |
 
 The final prepared dataset includes 10 capped numerical columns and five derived categorical columns in addition to the 16 retained original columns.
-Important columns
-Column	Description
-VendorNumber	Vendor identification number
-VendorName	Vendor or supplier name
-Brand	Brand identification number
-Description	Product description
-PurchasePrice	Unit purchase price
-ActualPrice	Actual selling price per unit
-Volume	Product volume or package size
-TotalPurchaseQuantity	Total purchased quantity
-TotalPurchaseDollars	Total purchase expenditure
-TotalSalesQuantity	Total sales quantity
-TotalSalesDollars	Total sales revenue
-TotalExciseTax	Total excise tax
-FreightCost	Freight or transportation cost
-GrossProfit	Gross profit recorded in the dataset
-ProfitMargin	Profit margin recorded in the dataset
-StockTurnover	Stock turnover measure recorded in the dataset
+
+### 📋 Important Columns
+
+| Column | Description |
+|---|---|
+| `VendorNumber` | Vendor identification number |
+| `VendorName` | Vendor or supplier name |
+| `Brand` | Brand identification number |
+| `Description` | Product description |
+| `PurchasePrice` | Unit purchase price |
+| `ActualPrice` | Actual selling price per unit |
+| `Volume` | Product volume or package size |
+| `TotalPurchaseQuantity` | Total purchased quantity |
+| `TotalPurchaseDollars` | Total purchase expenditure |
+| `TotalSalesQuantity` | Total sales quantity |
+| `TotalSalesDollars` | Total sales revenue |
+| `TotalExciseTax` | Total excise tax |
+| `FreightCost` | Freight or transportation cost |
+| `GrossProfit` | Gross profit recorded in the dataset |
+| `ProfitMargin` | Profit margin recorded in the dataset |
+| `StockTurnover` | Stock turnover measure recorded in the dataset |
 
 The original TotalSalesPrice and SalesToPurchaseRatio columns were removed during preprocessing because they were not retained for the subsequent analysis.
 
