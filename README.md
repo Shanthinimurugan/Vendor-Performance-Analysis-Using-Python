@@ -176,73 +176,67 @@ Important interpretation note: In this notebook, OrderSize is based on product V
 🧮 8. Important Business Formulas
    
 The following formulas explain the key measures used in the analysis. Where the notebook uses a field already supplied by the dataset, this is distinguished from a newly calculated metric.
-8.1 Total Purchase Amount
-$$
-\[
-\text{Total Purchases}=\sum \text{TotalPurchaseDollars}
-\]
-$$
 
-Measures the total expenditure recorded for purchasing products.
+### 8.2 Total Sales Revenue
 
-8.2 Total Sales Revenue
 $$
-\[
-\text{Total Sales}=\sum \text{TotalSalesDollars}
-\]
+\text{Total Sales} = \sum \text{TotalSalesDollars}
 $$
 
 Measures the total sales revenue recorded in the dataset.
 
-$$
-8.3 Gross Profit
-\[
-\text{Total Gross Profit}=\sum \text{GrossProfit}
-\]
-$$
-The notebook aggregates the supplied GrossProfit field. It does not independently recompute the accounting formula used to construct that source field.
+### 8.3 Gross Profit
 
-8.4 Overall Profit Margin
 $$
-\[
-\text{Profit Margin (\%)}=
+\text{Total Gross Profit} = \sum \text{GrossProfit}
+$$
+
+The notebook aggregates the supplied `GrossProfit` field. It does not independently recompute the accounting formula used to construct that source field.
+
+### 8.4 Overall Profit Margin
+
+$$
+\text{Profit Margin (\%)} =
 \frac{\sum \text{GrossProfit}}
-{\sum \text{TotalSalesDollars}}\times100
-\]
+{\sum \text{TotalSalesDollars}} \times 100
 $$
+
 This is the overall margin calculated using aggregate gross profit divided by aggregate sales. It is not the simple average of each row's profit margin.
 
-8.5 Vendor-Level Profit Margin
+### 8.5 Vendor-Level Profit Margin
+
 $$
-\[
-\text{Vendor Margin (\%)}=
+\text{Vendor Margin (\%)} =
 \frac{\text{Vendor Gross Profit}}
-{\text{Vendor Sales Revenue}}\times100
-\]
+{\text{Vendor Sales Revenue}} \times 100
 $$
+
 This allows vendors to be compared based on the proportion of their sales revenue represented by gross profit.
 
-8.6 Positive Profit, Loss, and Net Profit
-Positive profit is calculated by summing positive GrossProfit values.
+### 8.6 Positive Profit, Loss, and Net Profit
 
-Loss is calculated by summing negative GrossProfit values; it remains negative when presented as a signed amount.
+Positive profit is calculated by summing positive `GrossProfit` values.
+
+Loss is calculated by summing negative `GrossProfit` values; it remains negative when presented as a signed amount.
+
 $$
-\[
-\text{Net Profit}=\text{Positive Profit}+\text{Negative Loss}
-\]
+\text{Net Profit} =
+\text{Positive Profit} + \text{Negative Loss}
 $$
 
-8.7 Correlation
+### 8.7 Correlation
+
 The Pearson correlation coefficient is used to examine linear relationships between numerical variables.
+
 $$
-\[
-r=\frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}
-\]
+r = \frac{\operatorname{Cov}(X,Y)}
+{\sigma_X \sigma_Y}
 $$
 
 A positive coefficient indicates that two variables tend to increase together. A negative coefficient indicates an inverse relationship. Correlation alone does not establish causation.
 
 8.8 Statistical significance
+
 The analysis uses a significance threshold of \(0.05\).
 - \(p<0.05\): evidence of a statistically significant difference or association under the test assumptions.
 - \(p\geq0.05\): insufficient evidence to reject the null hypothesis.
