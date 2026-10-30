@@ -30,7 +30,7 @@ The business needs a reliable way to evaluate vendor performance and understand 
 10. Recommend strategies to improve vendor selection, control costs, and manage inventory effectively.
 
 
-🎯 **3. Project Objectives**
+## 🎯 **3. Project Objectives**
    
 - Analyse overall purchasing, sales, gross profit, and profit margin.
 - Identify the highest- and lowest-performing vendors and products.
@@ -43,7 +43,7 @@ The business needs a reliable way to evaluate vendor performance and understand 
 - Present the findings through Python visualizations and a Power BI dashboard.
 - Recommend business actions supported by the analysis.
   
-📁 **4. Dataset Information**
+## 📁 **4. Dataset Information**
 
 Dataset: Vendor Sales Summary
 
@@ -92,7 +92,7 @@ The final prepared dataset includes 10 capped numerical columns and five derived
 
 The original TotalSalesPrice and SalesToPurchaseRatio columns were removed during preprocessing because they were not retained for the subsequent analysis.
 
-🛠️ **5. Technology Stack**
+## 🛠️ **5. Technology Stack**
 
 Programming language: Python
 Libraries used:
@@ -104,7 +104,7 @@ Libraries used:
 - Plotly: Interactive visualizations.
 - Power BI: Dashboard development and business reporting.
   
-🧹 **6. Data Cleaning and Preprocessing**
+## 🧹 **6. Data Cleaning and Preprocessing**
 
 Data preparation was performed before the detailed exploratory analysis.
 
@@ -145,7 +145,7 @@ This technique reduces the influence of extreme values in the capped variables. 
 
 Data quality consideration: The initial exploratory analysis flagged negative-infinity values in ProfitMargin. These values should be explicitly audited and handled if the workflow is extended, rather than assuming that every non-finite value has been corrected by outlier treatment.
 
-⚙️ **7. Feature Engineering and Business Categories**
+## ⚙️ **7. Feature Engineering and Business Categories**
    
 The project created five additional categorical features to support comparisons and visualization.
 Derived feature	Classification used in the notebook
@@ -175,7 +175,7 @@ ProfitCategory: Based on GrossProfit:
 - Above 50,000: HighProfit
 Important interpretation note: In this notebook, OrderSize is based on product Volume, not TotalPurchaseQuantity. It should therefore be interpreted as a volume-based category rather than a measure of the number of units in an order.
 
-🧮 **8. Important Business Formulas**
+## 🧮 **8. Important Business Formulas**
    
 The following formulas explain the key measures used in the analysis. Where the notebook uses a field already supplied by the dataset, this is distinguished from a newly calculated metric.
 
@@ -245,7 +245,7 @@ The analysis uses a significance threshold of \(0.05\).
 - \(p\geq0.05\): insufficient evidence to reject the null hypothesis.
 The interpretation also depends on whether the groups, assumptions, and test design are appropriate for the business question.
 
-🔍 **9. Exploratory Data Analysis** 
+## 🔍 **9. Exploratory Data Analysis** 
 
 Exploratory analysis was conducted to understand financial performance, product behavior, vendor contributions, and inventory efficiency.
 Overall financial analysis
@@ -261,7 +261,7 @@ Purchase prices, actual prices, freight costs, excise taxes, order-size categori
 Distribution and correlation analysis
 Histograms, box plots, summary statistics, skewness, kurtosis, and correlation analysis were used to understand the spread of the data, identify extreme observations, and evaluate relationships between numerical variables.
 
-📈 **10. Statistical Analysis** 
+## 📈 **10. Statistical Analysis** 
 
 Three hypothesis tests and a confidence interval were included in the notebook.
 Method	Purpose	Recorded result
@@ -279,7 +279,7 @@ The t-test compares groups created from positive versus negative gross-profit va
 
 These tests provide supporting analysis; the business recommendations should also consider the underlying vendor, product, cost, and inventory data.
 
-💡 **11. Key Findings**
+## 💡 **11. Key Findings**
 
 The following findings are recorded in the notebook.
 Overall business performance
@@ -321,7 +321,7 @@ The medium freight-cost category had the highest number of records and the highe
 
 These findings illustrate why totals, averages, and margins should be examined together.
 
-✅ **12. Business Recommendations**
+## ✅ **12. Business Recommendations**
 
 Based on the analysis, the following actions are recommended.
 
@@ -339,7 +339,7 @@ Monitor product pricing. Compare purchase prices and selling prices alongside gr
 
 Monitor vendors over time. Maintain a dashboard that enables the business to track purchase expenditure, sales, gross profit, margins, stock movement, and loss-making records as new data becomes available.
 
-⚖️ **13. Limitations**
+## ⚖️ **13. Limitations**
     
 - The dataset's reporting period is not specified in the notebook.
 - The analysis is descriptive and diagnostic; it does not establish that one variable causes another.
@@ -350,7 +350,7 @@ Monitor vendors over time. Maintain a dashboard that enables the business to tra
 - The confidence interval uses a normal approximation and should be interpreted cautiously because the gross-profit distribution is skewed.
 - The statistical tests depend on their assumptions; significant p-values alone do not establish business causation.
   
-🚀 **14. Future Enhancements**
+## 🚀 **14. Future Enhancements**
   
 - Develop a predictive model to flag potentially loss-making vendors and forecast vendor profitability.
 - Compare suitable models using cross-validation and relevant metrics such as precision, recall, F1-score, and ROC-AUC.
@@ -360,7 +360,7 @@ Monitor vendors over time. Maintain a dashboard that enables the business to tra
 - Automate data preparation, reporting, and dashboard refreshes to support regular monitoring.
 - Strengthen validation of non-finite values and evaluate the effect of outlier treatment on reported metrics.
 
-🏁 **15. Conclusion**
+## 🏁 **15. Conclusion**
   
 The Vendor Performance Analysis project demonstrates how Python can be used to evaluate vendor contributions, product performance, profitability, costs, and inventory efficiency in a retail and supply chain setting.
 
