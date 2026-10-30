@@ -302,6 +302,7 @@ High sales contribution and high profit margin are different performance measure
 Product and brand performance
 - Jack Daniel’s No. 7 Black, Grand Marnier, and Bacardi Superior Rum were identified among the leading products by sales.
 - The notebook identified several products for investigation among the lowest-performing or negative-performing sales/profit records, including Bayou Satsuma Rum Liqueur and Havana Club variants.
+- Fast-moving products include Capt Morgan Spiced Rum, Baileys Irish Cream, and Smirnoff 80 Proof, while slow-moving products include St Hilaire Cr de Limoux Rose, The White Knight Prosecco, and Bunnahabain 18Yr Single Malt.
 - Brand-count analysis did not establish that supplying the largest number of brands automatically results in the highest gross profit.
 - Both product-level profitability and vendor-level contribution should be considered when reviewing brand performance.
 Purchase and sales relationships
