@@ -204,7 +204,7 @@ The notebook aggregates the supplied `GrossProfit` field. It does not independen
 ### 8.4 Overall Profit Margin
 
 $$
-\text{Profit Margin (\%)} =
+\text{Profit Margin} =
 \frac{\sum \text{GrossProfit}}
 {\sum \text{TotalSalesDollars}} \times 100
 $$
@@ -214,7 +214,7 @@ This is the overall margin calculated using aggregate gross profit divided by ag
 ### 8.5 Vendor-Level Profit Margin
 
 $$
-\text{Vendor Margin (\%)} =
+\text{Vendor Margin} =
 \frac{\text{Vendor Gross Profit}}
 {\text{Vendor Sales Revenue}} \times 100
 $$
