@@ -1,7 +1,7 @@
 # Vendor-Performance-Analysis-Using-Python
 Analyzed vendor sales and purchasing data using Python to evaluate sales performance, profitability, purchase trends, and vendor efficiency. Performed data cleaning, exploratory data analysis, statistical analysis, and visualization to identify top-performing vendors and business improvement opportunities.
 
-📌 **1. Project Overview**
+## 📌 **1. Project Overview**
 
 Vendor Performance Analysis is a data analytics project focused on evaluating vendor contributions to business revenue, profitability, purchasing, and inventory efficiency.
 
@@ -13,7 +13,7 @@ The analysis also includes statistical testing and exploratory visualizations to
 
 Project Domain: Retail and Supply Chain Analytics
 
-⚠️ **2. Business Problem Statement**
+## ⚠️ **2. Business Problem Statement**
    
 The business needs a reliable way to evaluate vendor performance and understand which vendors and products contribute positively to profitability. Reviewing purchase and sales values alone does not provide a complete picture of financial performance or inventory efficiency.
 
