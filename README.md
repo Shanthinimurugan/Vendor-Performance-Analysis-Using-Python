@@ -390,7 +390,7 @@ I would like to thank:
 - **Entri Elevate Course Support** for providing guidance, learning resources, and support throughout this project.
 - **Python Documentation** for valuable references and support in understanding Python and its libraries.
 - **Pandas and NumPy Documentation** for guidance on data manipulation, preprocessing, and numerical analysis.
-- **Matplotlib, Seaborn Documentation and PowerBI** for helping create visualizations and explore data patterns.
+- **Matplotlib and Seaborn Documentation** for helping create visualizations and explore data patterns.
 - **SciPy Documentation** for references on statistical analysis and hypothesis testing.
 - **Google Colab** for providing an interactive environment to execute Python code and analyze data.
 - **Microsoft Power BI** for enabling the creation of interactive dashboards and visual reports.
