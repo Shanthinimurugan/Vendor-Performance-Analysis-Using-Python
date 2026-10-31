@@ -378,7 +378,7 @@ This project is developed for educational purposes to demonstrate practical skil
 
 I would like to thank:
 
-- **Entri Elevate Course Support** for providing guidance, learning resources, and support throughout this project.
+- **Entri Elevate Course Support** for providing guidance, learning resources, and support throughout my Python and Data Analytics learning journey.
 - **Python Documentation** for valuable references and support in understanding Python and its libraries.
 - **Pandas and NumPy Documentation** for guidance on data manipulation, preprocessing, and numerical analysis.
 - **Matplotlib and Seaborn Documentation** for helping create visualizations and explore data patterns.
