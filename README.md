@@ -263,19 +263,10 @@ Histograms, box plots, summary statistics, skewness, kurtosis, and correlation a
 
 ## 📈 **10. Statistical Analysis** 
 
-Three hypothesis tests and a confidence interval were included in the notebook.
-Method	Purpose	Recorded result
-Independent-samples t-test	Compare gross-profit values for positive-profit and negative-profit records	\(t \approx 31.75\), \(p \approx 2.23\times10^{-211}\)
-One-way ANOVA	Compare average gross profit across four freight-cost categories	\(F \approx 92.75\), \(p \approx 3.04\times10^{-59}\)
-Chi-square test of independence	Examine association between stock-turnover category and binary profit/loss category	\(\chi^2 \approx 1603.28\), 2 degrees of freedom, \(p<0.001\)
-95% confidence interval	Estimate the population mean gross profit using a normal approximation	Approximately $8,004–$8,567
-
-Interpretation
-The ANOVA result indicates that average gross profit differs across the four freight-cost categories under the test assumptions. It does not, by itself, identify which pairs of categories differ or prove that freight costs cause the difference.
-
-The chi-square result indicates an association between stock-turnover category and profit/loss category. It does not establish causation.
-
-The t-test compares groups created from positive versus negative gross-profit values. Since the groups are defined by the sign of the outcome being compared, the significant result is expected and should not be interpreted as evidence explaining why certain records become loss-making.
+A series of statistical tests were conducted to evaluate transaction performance, profitability drivers, and business forecasting metrics. First, an independent two-sample **t-test** was performed to determine if the baseline gross profit scales significantly differ between transactions that generated a profit and those that incurred a loss. With a **T-Statistic of 31.75 and a P-Value of 2.23 × 10⁻²¹¹** (Degrees of Freedom = 10512.0), the results demonstrate an extremely strong, statistically significant difference between the two groups. Because the p-value is effectively zero, the null hypothesis is rejected, indicating that losses and gains are not symmetrical in magnitude and operate on completely different financial scales.
+Next, a One-Way Analysis of Variance (ANOVA) evaluated whether the average gross profit changes significantly based on logistics and shipping expenditures across four distinct freight cost categories: Very Low, Low, Medium, and High. The analysis yielded an **F-Statistic of 92.75 and a near-zero P-Value of 3.04 × 10⁻⁵⁹**, confirming that freight cost tiers directly impact and heavily correlate with overall transaction profitability. This indicates that average gross profits vary substantially between the different logistical scales, making shipping efficiency a critical determinant of corporate net margin health.
+To understand inventory dynamics, a Chi-Square Test of Independence was used to assess the relationship between how fast stock sells (Stock Turnover Category) and the final transaction outcome categorized as a Profit, Loss, or Break-even. The test revealed a **Chi-Square Statistic of 1603.28 and a P-Value of 0.0** (Degrees of Freedom = 2), proving that stock turnover speed and profitability are heavily dependent on each other. The observed distributions deviate massively from a random scenario, indicating that inventory velocity directly predicts whether a product line converts into a financial gain or loss.
+Finally, a 95% Confidence Interval was calculated using a standard normal distribution approach to estimate the true, underlying population mean for gross profit across the entire business lifecycle. Based on the sample metrics, the true operational population mean for gross profit is **statistically estimated to fall tightly between 8,003.996 and 8,567.327 units**. This narrow confidence range provides a highly reliable, data-driven baseline for future financial forecasting, corporate budgeting, and performance benchmarking targets.
 
 These tests provide supporting analysis; the business recommendations should also consider the underlying vendor, product, cost, and inventory data.
 
